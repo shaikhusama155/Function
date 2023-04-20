@@ -5,94 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Function</title>
 </head>
 
 <body>
 
 
-    <script>
 
-        function date(dateAndTime) {
-            console.log(dateAndTime)
-        }
-        date(new Date())
-
-        function greet(firstName, lastName) {
-            console.log("Hey! " + firstName + " " + lastName)
-        }
-        greet(prompt("Enter first name"), prompt("Enter last name"))
-
-
-        function addNumbers() {
-            let num1 = parseInt(prompt("Enter first number"));
-            let num2 = parseInt(prompt("Enter second number"));
-            let sum = num1 + num2;
-            return sum;
-        }
-        let result = addNumbers();
-        console.log("The sum of two number is:" + result);
-
-        function calculator(num3, num4, operator) {
-            let result1;
-            if (operator === "add") {
-                result1 = num3 + num4;
-            }
-            else if (operator === "minus") {
-                result1 = num3 - num4;
-            }
-            else if (operator === "multiply") {
-                result1 = num3 * num4;
-            }
-            else if (operator === "divide") {
-                result1 = num3 / num4;
-            }
-            else {
-                result1 = "Operator is Invalid";
-            }
-            return result1;
-        }
-        let num3 = +prompt("Enter number 1");
-        let num4 = +prompt("Enter number 2");
-        let operator = "add";
-        let result1 = calculator(num3, num4, operator)
-        document.write("The result of the operation is: " + result1 +"</br>")
-
-
-        function square(num) {
-            return num * num;
-        }
-        let num = 5;
-        let result2 = square(num);
-        console.log("The square of " + num + " is " + result2);
-
-        function factorial(num5) {
-            if (num5 == 0) {
-                return 1;
-            }
-            else {
-                return num5 * factorial(num5 - 1);
-            }
-        }
-        let num5 = 5;
-        let result3 = factorial(num5);
-        console.log("The factorial of " + num + " is " + result3)
-
-
-        function count(start, end) {
-            for (let i = start; i <= end; i++) {
-                document.write(i+ " ")
-            }
-        }
-        let start = 10;
-        let end = 25;
-        let counting = count(start, end);
-        count()
-
-
-
-
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
